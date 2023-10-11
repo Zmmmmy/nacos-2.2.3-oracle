@@ -1,5 +1,15 @@
 # nacos-2.2.3-oracle
+# 感谢490937333提供的单机测试包和wuchubuzai2018提供的数据库脚本
 nacos 2.2.3-oracle版本，支持集群
+
+## 修改说明
+1.下载nacos2.2.3源码
+2.在plugin/datasource模块下。com.alibaba.nacos.plugin.datasource.impl包下新建oracle包
+3.实现com.alibaba.nacos.plugin.datasource.mapper包下的接口
+4.编译代码
+
+
+
 
 [下载链接](https://github.com/Zmmmmy/nacos-2.2.3-oracle/releases/download/2.2.3/nacos2.2.3-oracle.zip)
 
