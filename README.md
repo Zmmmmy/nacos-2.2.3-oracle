@@ -8,6 +8,11 @@ nacos 2.2.3-oracle版本，支持集群
 3.    实现com.alibaba.nacos.plugin.datasource.mapper包下的接口
 4.    编译代码
 
+## 编译命令
+~~~shell
+mvn -Prelease-nacos  -B  clean install -Dmaven.test.skip=true -Dcheckstyle.skip=true -Dpmd.skip=true -Drat.skip=true -U
+~~~
+
 
 
 
