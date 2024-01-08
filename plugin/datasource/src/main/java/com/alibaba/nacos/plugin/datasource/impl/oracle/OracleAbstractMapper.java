@@ -134,11 +134,7 @@ public abstract class OracleAbstractMapper extends AbstractMapper {
 		for (int i = 0; i < where.size(); i++) {
 			String column = where.get(i);
 			if ("tenant_id".equalsIgnoreCase(column)) {
-				sql.append("(");
 				sql.append(column).append(" = ").append("?");
-				sql.append(" OR ");
-				sql.append(column).append(" IS NULL ");
-				sql.append(")");
 			}
 			else {
 				sql.append(column).append(" = ").append("?");
